@@ -1,69 +1,70 @@
-# RPI Loop Tool - Complete Specification Package
-*Everything needed to build the Research → Plan → Implement methodology tool*
+# RPI Loop Tool - MVP Specification Package
+*Simplified specification for rapid MVP delivery*
 
 ## What This Contains
 
-This `specs/` directory contains the **complete specification package** for building the RPI Loop CLI tool - a revolutionary system that transforms AI-assisted development from chaotic "vibe coding" into systematic, specification-driven workflows with proven enterprise results.
+This `specs/` directory contains the **MVP specification** for building the RPI Loop CLI tool - a simple prompt generator that helps developers create better Claude Code prompts using the proven Research → Plan → Implement methodology.
 
-## 🎯 Project Overview
+## 🎯 MVP Focus
 
-**RPI Loop** is a Node.js CLI tool that implements the proven Research → Plan → Implement methodology:
-- **Research Phase**: Understand the problem without implementation details
-- **Planning Phase**: Break research into atomic, executable tasks  
-- **Implementation Phase**: Systematically execute with context management
+**RPI Loop MVP** is a lightweight Node.js CLI tool that:
+- **Generates Better Prompts**: Creates structured prompts for Claude Code
+- **Follows RPI Methodology**: Research → Plan → Implement workflow  
+- **Simple Installation**: Works in <2 minutes with zero configuration
+- **Immediate Value**: Better AI responses from first use
 
-**Proven Results**: Used successfully on 300,000+ line codebases, teams shipping without reading code, context efficiency <40%, enterprise-grade quality.
+**Proven Results**: Based on methodology used successfully on 300,000+ line codebases, now simplified for individual developer adoption.
 
 ## 📁 Directory Structure
 
 ```
 specs/
-├── README.md                           # This file - overview and usage guide
-├── rpi-loop-specification.md           # Complete project specification
-├── implementation-todos.md             # Atomic implementation tasks (8 phases)
-├── templates/                          # Handlebars templates for all phases
-│   ├── research-template.hbs           # Research phase template
-│   ├── planning-template.hbs           # Planning phase template
-│   └── implementation-template.hbs     # Implementation tracking template
+├── README.md                           # This file - MVP overview
+├── implementation-todos-mvp.md         # 32 atomic tasks for MVP (3 weeks)
+├── mvp-success-criteria.md             # Clear validation metrics
+├── rpi-loop-specification.md           # Core methodology specification
 ├── claude-code-prompts/                # Ready-to-use prompts for Claude Code
 │   ├── research-prompt.md              # Battle-tested research prompt
 │   ├── planning-prompt.md              # Battle-tested planning prompt
 │   └── implementation-prompt.md        # Battle-tested implementation prompt
-└── examples/                           # Real-world workflow examples
-    └── api-rate-limiting-complete-workflow.md  # Complete example workflow
+├── examples/                           # Real-world workflow examples
+│   └── api-rate-limiting-complete-workflow.md  # Complete example workflow
+└── archive/                            # Previous complex specifications
+    └── implementation-todos-v1.md      # Original 158-task plan (archived)
 ```
 
-## 🚀 How to Use This Specification
+## 🚀 How to Build the MVP
 
-### Step 1: Read the Main Specification
-Start with `rpi-loop-specification.md`:
-- Complete project overview and requirements
-- Technical architecture and component design
-- Success criteria and validation requirements
-- Integration specifications for Claude Code
+### Step 1: Review MVP Plan
+Start with `implementation-todos-mvp.md`:
+- **32 atomic tasks** organized in 3 phases
+- **3-week timeline** for MVP delivery
+- Each task completable in single session
+- Clear validation for each phase
 
-### Step 2: Follow the Implementation Plan
-Use `implementation-todos.md` for building:
-- **8 implementation phases** with atomic tasks
-- Each task completable by a single command
-- Context budget management throughout
-- Clear completion criteria for each phase
+### Step 2: Validate Success Criteria
+Use `mvp-success-criteria.md` throughout:
+- Clear metrics for launch readiness
+- Go/no-go decision criteria
+- User validation requirements
+- Failure indicators to watch
 
-### Step 3: Implement Templates and Prompts
-Use the `templates/` and `claude-code-prompts/` directories:
-- Handlebars templates for dynamic content generation
-- Battle-tested prompts proven in enterprise environments
-- Claude Code integration with copy-paste ready prompts
+### Step 3: Reference Methodology
+Consult `rpi-loop-specification.md` for:
+- Core methodology understanding
+- Claude Code integration approach
+- Template structure guidance
+- But skip complex features for MVP
 
-### Step 4: Validate with Examples
-Use `examples/` for testing and validation:
-- Complete real-world workflow demonstration
-- Shows input/output for all three phases
-- Demonstrates context management and quality outcomes
+### Step 4: Test with Example
+Use `examples/api-rate-limiting-complete-workflow.md`:
+- See complete RPI workflow in action
+- Understand expected outputs
+- Validate MVP produces similar quality
 
-## 🛠️ Quick Start for Developers
+## 🛠️ Quick Start for MVP Development
 
-### 1. Initial Setup
+### 1. Initial Setup (Simplified)
 ```bash
 # Create project directory
 mkdir rpi-loop && cd rpi-loop
@@ -71,178 +72,146 @@ mkdir rpi-loop && cd rpi-loop
 # Initialize Node.js project
 npm init -y
 
-# Install dependencies (from implementation-todos.md)
-npm install commander inquirer handlebars chalk fs-extra json5
-npm install --save-dev jest eslint prettier
+# Install MVP dependencies only
+npm install commander fs-extra handlebars chalk
+# Skip test frameworks and linting for MVP
 ```
 
-### 2. Core Implementation Phases
-Follow the atomic tasks in `implementation-todos.md`:
+### 2. MVP Implementation Phases
+Follow the 32 tasks in `implementation-todos-mvp.md`:
 
-**Phase 1: Project Foundation** (Week 1)
-- Project initialization and dependency setup
-- Directory structure creation
-- Basic package.json configuration
+**Phase 1: Core CLI Foundation** (Week 1)
+- Basic project setup (5 tasks)
+- Core commands implementation (8 tasks)
+- Simple file management (7 tasks)
 
-**Phase 2: Core Infrastructure** (Week 1)  
-- CLI entry point with Commander.js
-- Session management system
-- Configuration and file management
+**Phase 2: Claude Code Excellence** (Week 1)
+- Perfect prompt generation (6 tasks)
+- User experience polish (4 tasks)
 
-**Phase 3: Command Implementation** (Week 2)
-- All core commands (init, research, plan, implement, status, context)
-- Argument parsing and validation
-- Basic workflow functionality
+**Phase 3: Distribution** (Week 1)
+- Basic testing (3 tasks)
+- Documentation & npm publish (5 tasks)
 
-**Phase 4: Templates & Prompts** (Week 2)
-- Handlebars template system
-- Claude Code prompt generation
-- Template customization support
+### 3. MVP Success Metrics
+- ✅ Installation works in <2 minutes
+- ✅ First RPI cycle completes in <10 minutes
+- ✅ Generated prompts improve Claude Code outputs
+- ✅ Zero configuration required
+- ✅ Works on Mac, Linux, Windows
 
-**Phase 5: Context Monitoring** (Week 3)
-- Context utilization tracking (<40% target)
-- Automatic compaction suggestions
-- Context analysis and reporting
+## 💡 MVP Implementation Focus
 
-**Phase 6: Testing & Quality** (Week 3)
-- Comprehensive test suite (95%+ coverage)
-- Error handling and edge cases
-- Code quality standards
+### Simplicity First
+- **No Complex Features**: Skip context monitoring, session management
+- **Basic Templates**: Simple, effective templates without customization
+- **Zero Configuration**: Works immediately after installation
 
-**Phase 7: Examples & Documentation** (Week 4)
-- Real-world examples
-- User and developer documentation
-- Package preparation
+### Claude Code Integration (Critical)
+- **Perfect Prompts**: Focus on prompt quality over features
+- **Copy-Paste Ready**: Prompts work immediately in Claude Code
+- **Context Handoff**: Simple inclusion of previous phase content
 
-**Phase 8: Deployment & Distribution** (Week 4)
-- NPM package publishing
-- Cross-platform testing
-- Final validation
+### Rapid Validation
+- **3-Week Timeline**: Ship fast, iterate based on feedback
+- **32 Tasks Total**: 80% reduction from original plan
+- **User Testing**: 10 developers must succeed in first month
 
-### 3. Key Success Metrics
-- ✅ Complete RPI cycle (init → research → plan → implement) works end-to-end
-- ✅ Context monitoring maintains <40% utilization
-- ✅ Claude Code integration generates useful prompts
-- ✅ Setup time <2 minutes for new users
-- ✅ All commands respond <500ms
+## 📊 Expected MVP Outcomes
 
-## 💡 Key Implementation Insights
+### Week 1: Working Tool
+- Basic CLI with all core commands
+- Simple templates rendering correctly
+- Complete workflow functional
 
-### Context Management (Critical)
-- **40% Rule**: Keep context utilization under 40% throughout
-- **Intentional Compaction**: Systematic context cleanup between phases
-- **Fresh Contexts**: Each phase starts with optimal context state
+### Week 2: Quality Prompts
+- Claude Code prompts generating better responses
+- User experience polished and intuitive
+- Error handling graceful
 
-### Task Atomicity (Essential)
-- **Single Command**: Each task completable by one Claude Code session
-- **Clear Validation**: Every task has specific success criteria
-- **No Dependencies**: Tasks independent within phases
+### Week 3: Public Release
+- npm package published and installable
+- Documentation enables self-service adoption
+- First users completing successful RPI cycles
 
-### Template System (Core)
-- **Dynamic Content**: Handlebars templates with real-time data
-- **Customizable**: User can override templates
-- **Consistent**: Standard structure across all phases
+### Month 1: Validation
+- 100+ GitHub stars showing interest
+- 10+ developers using successfully
+- Clear feedback on what to build next
 
-### Claude Code Integration (Primary)
-- **Ready-to-Use**: Generated prompts work immediately
-- **Context Aware**: Prompts include relevant context from previous phases
-- **Battle-Tested**: Prompts proven on enterprise codebases
+## 🎯 MVP Success Validation
 
-## 📊 Expected Outcomes
+### When MVP is Ready:
+1. **New user completes first RPI cycle in <15 minutes**
+2. **Installation works without configuration**
+3. **Claude Code prompts demonstrably improve outputs**
+4. **Complete workflow executes without errors**
+5. **10 beta testers successfully use the tool**
 
-### For Individual Developers
-- **Systematic Approach**: Replaces ad-hoc "vibe coding"
-- **Context Efficiency**: Better AI effectiveness through management
-- **Quality Assurance**: Front-loaded thinking prevents surprises
-- **Clear Progress**: Measurable milestones throughout
+### Launch Criteria:
+- ✅ Works on Mac, Linux, Windows
+- ✅ Zero critical bugs
+- ✅ README enables self-service
+- ✅ npm package installs globally
 
-### For Teams
-- **Specification Review**: 200-line specs vs 2000-line PRs
-- **Shared Understanding**: Readable research and plans
-- **Knowledge Transfer**: Living documentation
-- **Risk Reduction**: Early problem identification
+## 🚨 MVP Critical Requirements
 
-### For Organizations
-- **Faster Development**: Fewer surprises and rework
-- **Better Quality**: Systematic validation throughout
-- **Team Alignment**: Clear communication on complex problems
-- **Reproducible Process**: Scalable across projects and teams
+### Must Work Perfectly:
+1. **Installation**: `npm install -g rpi-loop` works everywhere
+2. **Basic Commands**: init, research, plan, implement
+3. **Prompt Generation**: High-quality Claude Code prompts
+4. **File Creation**: Simple ./rpi/ directory structure
+5. **Error Messages**: Clear guidance when things go wrong
 
-## 🎯 Success Validation
+### Can Be Basic:
+- **Templates**: Simple but effective (no customization)
+- **Output**: Basic terminal output (minimal colors)
+- **Testing**: End-to-end validation (skip unit tests)
+- **Documentation**: Simple README (skip extensive docs)
 
-### When RPI Loop Tool is Complete:
-1. **New user can complete first RPI cycle in <30 minutes**
-2. **Context monitoring prevents >40% utilization**
-3. **Claude Code prompts generate immediately useful output**
-4. **Templates render correctly with dynamic content**
-5. **Complete workflow from init to implementation works smoothly**
+### Skip Entirely:
+- **Context Monitoring**: Add in v1.1
+- **Session Management**: Add in v1.2
+- **Advanced Features**: Add based on user feedback
+- **Performance Optimization**: Not needed for MVP
 
-### Quality Gates:
-- ✅ 95%+ test coverage maintained
-- ✅ All atomic tasks completable as specified
-- ✅ Cross-platform compatibility (macOS, Linux, Windows WSL)
-- ✅ Performance targets met (<500ms commands, <2min setup)
+## 🔥 Why This MVP Matters
 
-## 🚨 Critical Implementation Notes
+This MVP validates a **fundamental question**:
 
-### Must-Have Features:
-1. **Context Monitoring**: 40% threshold with automatic warnings
-2. **Template System**: Dynamic content generation with Handlebars
-3. **Claude Code Integration**: Ready-to-use prompt generation
-4. **Session Management**: Persistent state across phase transitions
-5. **Atomic Task Validation**: Each task independently executable
+**Can a simple tool make Claude Code significantly more effective?**
 
-### Integration Requirements:
-- **Primary**: Claude Code (slash commands, prompts)
-- **Secondary**: Copilot, Gemini CLI (future enhancement)
-- **File System**: Standard git projects, any programming language
-- **Deployment**: NPM global install, cross-platform support
+If YES:
+- Proves RPI methodology value
+- Justifies further investment
+- Builds community for iteration
+- Creates platform for thought leadership
 
-### Quality Standards:
-- **Code Quality**: ESLint + Prettier, comprehensive error handling
-- **Testing**: Jest with 95%+ coverage, integration tests
-- **Documentation**: User guides, developer docs, API reference
-- **Performance**: <500ms commands, <100ms template rendering
+If NO:
+- Saves months of wasted effort
+- Reveals what actually matters
+- Enables rapid pivot
+- Costs only 3 weeks to find out
 
-## 🔥 Why This Matters
+## 🎉 Ready to Build MVP
 
-This tool represents a **fundamental shift** in AI-assisted development:
+This MVP specification enables **rapid validation** of:
+- ✅ Core RPI methodology value
+- ✅ Claude Code integration effectiveness
+- ✅ Developer adoption potential
+- ✅ Community interest level
+- ✅ Future feature priorities
 
-### From Reactive to Proactive
-- Traditional: Fix problems during implementation
-- RPI Loop: Prevent problems through systematic planning
-
-### From Code-First to Specification-First  
-- Traditional: Write code, then document
-- RPI Loop: Specify intent, then implement systematically
-
-### From Individual to Systematic
-- Traditional: Each developer has their own approach
-- RPI Loop: Shared methodology with proven results
-
-### From Ad-hoc to Measurable
-- Traditional: Success depends on individual skill
-- RPI Loop: Reproducible process with clear metrics
-
-## 🎉 Ready to Build
-
-This specification package contains **everything needed** to build a production-ready tool that:
-- ✅ Transforms AI-assisted development methodology
-- ✅ Has proven results on enterprise codebases
-- ✅ Works seamlessly with Claude Code
-- ✅ Scales from individual developers to large teams
-- ✅ Produces measurably better software development outcomes
-
-**The future of systematic, AI-assisted development starts with implementing this specification.**
+**Ship in 3 weeks. Learn from real users. Build what matters.**
 
 ---
 
-## Quick Implementation Start
+## Quick MVP Implementation
 
-1. **Read**: `rpi-loop-specification.md` (complete overview)
-2. **Plan**: `implementation-todos.md` (8-phase execution plan)
-3. **Build**: Follow atomic tasks with <40% context utilization
-4. **Test**: Use `examples/` for validation
-5. **Deploy**: NPM package for global adoption
+1. **Start**: `implementation-todos-mvp.md` (32 tasks)
+2. **Validate**: `mvp-success-criteria.md` (clear metrics)
+3. **Build**: Week 1-2 focused development
+4. **Test**: Week 3 with beta users
+5. **Launch**: Week 4 public release
 
-**Time to transform software development. Time to build the future.**
+**Time to validate. Time to ship. Time to learn.**
