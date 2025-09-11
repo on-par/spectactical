@@ -1,0 +1,1 @@
+Do some research. Like, really good research. On https://github.com/github/spec-kit - think hardest. Pull all the information about it you can into a markdown file (research/spec-kit-research.md) pull the basics of Spec Driven Development as well into a markdown file (research/spec-driven-development.md) Use other sources, too.
