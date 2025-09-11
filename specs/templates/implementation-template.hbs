@@ -1,0 +1,180 @@
+# Implementation Progress: {{topic}}
+*Generated: {{timestamp}} | Phase: Implementation | Session: {{sessionId}}*
+*Executing Plan: `{{planFile}}`*
+
+## 📊 Current Status
+
+### Phase Overview
+- **Current Phase**: {{currentPhase}}/{{totalPhases}} ({{phaseName}})
+- **Overall Progress**: {{overallProgress}}%
+- **Context Utilization**: {{contextUsage}}% {{statusIndicator}}
+- **Session Time**: {{sessionDuration}}
+
+### Context Budget Status
+- **Target**: < 40% utilization
+- **Current**: {{contextUsage}}%
+- **Trend**: {{trendIndicator}} (↑ increasing, ↓ decreasing, → stable)
+- **Next Checkpoint**: {{nextCheckpoint}}
+
+---
+
+## ✅ Completed Phases
+
+### {{completedPhaseName}} - COMPLETE ✅
+**Completed**: {{completionTimestamp}}
+
+#### Completed Tasks
+- [x] **{{taskName}}** (`{{filePath}}:{{lineRange}}`)
+  - **Result**: {{taskResult}}
+  - **Tests**: {{testStatus}}
+  - **Performance**: {{performanceResult}}
+
+- [x] **{{taskName}}** (`{{filePath}}:{{lineRange}}`)
+  - **Result**: {{taskResult}}
+  - **Tests**: {{testStatus}}
+  - **Performance**: {{performanceResult}}
+
+#### Phase Results
+- **Functionality**: {{functionalStatus}}
+- **Tests**: {{testResults}}
+- **Performance**: {{performanceMetrics}}
+- **Context Impact**: Used {{phaseContext}}% (planned: {{plannedContext}}%)
+
+---
+
+## 🔄 Current Phase: {{currentPhaseName}} - IN PROGRESS
+
+### Active Task
+- [ ] **{{activeTask}}** (`{{filePath}}:{{lineRange}}`)
+  - **Progress**: {{taskProgress}}%
+  - **Current Status**: {{detailedStatus}}
+  - **Next Step**: {{nextStep}}
+  - **Context Impact**: +{{contextDelta}}% (total now {{currentContext}}%)
+  - **Started**: {{startTime}}
+  - **Estimated Completion**: {{eta}}
+
+### Task Details
+**What we're doing**: {{taskDescription}}
+**Why it matters**: {{taskRationale}}
+**How we're testing**: {{testingApproach}}
+
+### Remaining Tasks in Current Phase
+- [ ] **{{pendingTask1}}** - {{taskSummary}}
+- [ ] **{{pendingTask2}}** - {{taskSummary}}
+
+---
+
+## ⏳ Pending Phases
+
+### {{nextPhaseName}} - QUEUED
+**Estimated Context**: {{estimatedContext}}%
+**Key Tasks**: {{phaseSummary}}
+
+---
+
+## 🎯 Quality Metrics (Real-time)
+
+### Test Status
+- **Unit Tests**: {{unitTestStatus}} ({{unitTestCount}} tests)
+- **Integration Tests**: {{integrationTestStatus}} ({{integrationTestCount}} tests)
+- **Coverage**: {{coveragePercentage}}% (target: {{targetCoverage}}%)
+
+### Performance Metrics
+- **Response Time**: {{responseTime}}ms (target: <{{targetResponse}}ms)
+- **Memory Usage**: {{memoryUsage}} (baseline: {{memoryBaseline}})
+- **Error Rate**: {{errorRate}}% (target: <{{targetErrorRate}}%)
+
+### Code Quality
+- **Linting**: {{lintStatus}}
+- **Type Checking**: {{typeCheckStatus}}
+- **Security Scan**: {{securityStatus}}
+
+---
+
+## 🚨 Issues & Deviations
+
+### Current Issues
+{{#if currentIssues}}
+- **Issue 1**: {{issueDescription}}
+  - **Impact**: {{issueImpact}}
+  - **Status**: {{issueStatus}}
+  - **Resolution Plan**: {{resolutionPlan}}
+{{else}}
+- **No current issues** ✅
+{{/if}}
+
+### Plan Deviations
+{{#if planDeviations}}
+- **Deviation 1**: {{deviationDescription}}
+  - **Reason**: {{deviationReason}}
+  - **Impact**: {{deviationImpact}}
+  - **Adjustment**: {{planAdjustment}}
+{{else}}
+- **Implementation following plan exactly** ✅
+{{/if}}
+
+---
+
+## 🔄 Context Management
+
+### Current Context Breakdown
+- **Research Context**: {{researchContext}}% (compacted)
+- **Plan Context**: {{planContext}}% (compacted)
+- **Implementation Context**: {{implementationContext}}%
+- **Working Memory**: {{workingMemory}}%
+- **Total**: {{totalContext}}%
+
+### Next Context Action
+{{#if approachingLimit}}
+- **Action Required**: Context compaction needed
+- **Trigger**: {{compactionTrigger}}
+- **What to preserve**: {{preservationStrategy}}
+{{else}}
+- **Status**: Context healthy, continue implementation
+- **Next checkpoint**: {{nextCheckpoint}}
+{{/if}}
+
+### Context Handoff Preparation
+{{#if phaseTransitionApproaching}}
+- **Upcoming Transition**: To {{nextPhase}}
+- **Handoff Requirements**: {{handoffRequirements}}
+- **Information to Carry Forward**: {{carryForwardInfo}}
+{{/if}}
+
+---
+
+## 📈 Session Analytics
+
+### Productivity Metrics
+- **Tasks Completed**: {{completedTasks}}/{{totalTasks}}
+- **Time per Task**: {{avgTimePerTask}}
+- **Context Efficiency**: {{contextEfficiency}}%
+- **Plan Adherence**: {{planAdherence}}%
+
+### Learning & Insights
+- **Key Learnings**: {{sessionLearnings}}
+- **Process Improvements**: {{processImprovements}}
+- **Team Notes**: {{teamNotes}}
+
+---
+
+## 🎯 Next Actions
+
+### Immediate (Next 15 minutes)
+1. {{immediateAction1}}
+2. {{immediateAction2}}
+
+### Short-term (This session)
+1. {{shortTermAction1}}
+2. {{shortTermAction2}}
+
+### Medium-term (Next session)
+1. {{mediumTermAction1}}
+2. {{mediumTermAction2}}
+
+---
+**Implementation Status**: {{implementationStatus}}
+**Context Utilization**: {{contextUsage}}%
+**Previous Phase**: Planning → `{{planFile}}`
+**Next Milestone**: {{nextMilestone}}
+**Last Updated**: {{lastUpdateTime}}
